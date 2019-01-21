@@ -1,8 +1,13 @@
-module: foreman_param
+# module: foreman_param
+
 author:  Drew Mullen
+
 short_description: Update a foreman parameter
+
 description:
     - Can CRUD foreman parameters
+
+```
 options:
     fqdn:
         description:
@@ -33,3 +38,4 @@ options:
             - Not working. placeholder for TODO
         default: false
         choices: ['true', 'false']
+```
