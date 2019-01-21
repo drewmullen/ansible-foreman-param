@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: create a parameter
+      foreman_param:
+          fqdn: example.domain.com
+          param: i_like
+          value: ansible
+          foreman_user: foreman_admin
+          foreman_pass: <blergh>
